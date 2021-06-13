@@ -1,2 +1,1 @@
-# ROOTMAP.Core
-The core libraries of the ROOTMAP simulation model.
+ROOTMAP Core repo - core and simulation projects. Idea is to produce a single library that can be referenced by other projects - e.g. ROOTMAP.Native (the current C++ Windows app), ROOTMAP.CLI (C++ Windows command line app), a test and development harness (ROOTMAP.Core.Test) etc.
