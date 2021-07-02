@@ -1,6 +1,7 @@
 # Run the copy of GitVersion installed in the packages directory to get GitVersion information for this project.
 $gitVersionExe = Get-ChildItem -Recurse ..\.. GitVersion.exe
-$gitVersionJson = & $gitVersionExe /output json
+$gitVersionJson = & $gitVersionExe
+
 Write-Host "GitVersion output:"
 Write-Host $gitVersionJson
 $gitVersionProperties = $gitVersionJson | Out-String | ConvertFrom-Json
