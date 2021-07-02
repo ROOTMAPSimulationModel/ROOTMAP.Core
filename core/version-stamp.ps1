@@ -1,6 +1,6 @@
 # Run the copy of GitVersion installed in the packages directory to get GitVersion information for this project.
 $gitVersionExe = Get-ChildItem -Recurse ..\.. GitVersion.exe
-$gitVersionJson = & $gitVersionExe
+$gitVersionJson = & $gitVersionExe -output json
 
 Write-Host "GitVersion output:"
 Write-Host $gitVersionJson
@@ -11,7 +11,7 @@ $ver = $gitVersionProperties.NuGetVersionV2
 $newVersionCpp = @"
 #include <string>
 
-extern const std::string rootmapCoreVersion = "$ver";
+extern const std::string rootmapVersion = "$ver";
 "@
 
 # Determine if `RmVersion.cpp` already exists, and diff it against the new if it does.

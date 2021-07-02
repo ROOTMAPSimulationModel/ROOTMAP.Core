@@ -2,4 +2,4 @@
 
 #include <string>
 
-extern const std::string rootmapCoreVersion;
+extern const std::string rootmapVersion;
