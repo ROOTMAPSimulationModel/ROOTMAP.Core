@@ -6,6 +6,7 @@
 */
 
 #include "core/common/Exceptions.h"
+#include <stdexcept>
 
 namespace rootmap
 {
@@ -16,7 +17,7 @@ namespace rootmap
     {
     }
 
-    RmException::RmException(wxString& reason)
+    RmException::RmException(wxString reason)
         : myReason(reason)
     {
     }

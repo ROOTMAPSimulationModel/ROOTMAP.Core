@@ -2,6 +2,7 @@
 #define CoreTypes_H
 #include "core/macos_compatibility/macos_compatibility.h"
 #include <map>
+#include <string>
 
 namespace rootmap
 {
