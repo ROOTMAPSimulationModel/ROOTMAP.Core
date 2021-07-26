@@ -9,6 +9,7 @@
 #include <algorithm>
 #include <cctype>
 #include <vector>
+#include <string>
 
 namespace rootmap
 {

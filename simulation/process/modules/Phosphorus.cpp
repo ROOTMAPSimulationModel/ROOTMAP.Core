@@ -1362,11 +1362,11 @@ namespace rootmap
                     break;
                 case 2: //citrate
                     exudate_test = 2;
-                    exudate_factor = 2.4; //curve function a simple hyperbola for now
+                    exudate_factor = 2.4f; //curve function a simple hyperbola for now
                     break;
                 case 3: //malate
                     exudate_test = 3;
-                    exudate_factor = 0.4; //curve function a simple hyperbola for now
+                    exudate_factor = 0.4f; //curve function a simple hyperbola for now
                     break;
                 default: //we don't know what this number means, whoops
                     //error message to log "Unrecognised organic exudate"

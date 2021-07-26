@@ -96,7 +96,7 @@ namespace rootmap
         m_outputTimingStrategy->UpdateTime(t);
     }
 
-    void TestFileExistence(const wxString& absoluteFilePath)
+    void TestFileExistence(const wxString absoluteFilePath)
     {
         // Warning: Windows-specific
         DWORD fileAttributes = GetFileAttributes(absoluteFilePath.wc_str());

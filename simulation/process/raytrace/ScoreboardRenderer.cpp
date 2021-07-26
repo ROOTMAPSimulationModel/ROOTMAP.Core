@@ -32,18 +32,18 @@ namespace rootmap
         // This class no longer owns the ScoreboardColourInfo
     }
 
-    void ScoreboardRenderer::UseScoreboard(Scoreboard* scoreboard)
+    void ScoreboardRenderer::UseScoreboard(Scoreboard* /*scoreboard*/)
     {
     }
 
-    long int ScoreboardRenderer::DoRaytracerOutput(RaytracerData* raytracerData)
+    long int ScoreboardRenderer::DoRaytracerOutput(RaytracerData* /*raytracerData*/)
     {
         return kNoError;
     }
 
     void ScoreboardRenderer::RaytraceScoreboard
-    (RaytracerData* raytracerData,
-        const ScoreboardStratum& stratum)
+    (RaytracerData* /*raytracerData*/,
+        const ScoreboardStratum& /*stratum*/)
     {
     }
 
@@ -58,7 +58,7 @@ namespace rootmap
         return (Process::Register(action));
     }
 
-    long int ScoreboardRenderer::DoGeneralPurpose0(ProcessActionDescriptor* action)
+    long int ScoreboardRenderer::DoGeneralPurpose0(ProcessActionDescriptor* /*action*/)
     {
         return (kNoError);
     }
@@ -85,7 +85,7 @@ namespace rootmap
     }
 
     void ScoreboardRenderer::RunOnce
-    (RaytracerData* raytracerData /*,
+    (RaytracerData* /*raytracerData*/ /*,
     const ScoreboardStratum & stratum */)
     {
     }

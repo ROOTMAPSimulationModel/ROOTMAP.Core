@@ -22,7 +22,7 @@ namespace rootmap
     public:
         RmException(const char * reason)
             : myReason(reason) {}
-        RmException(wxString& reason)
+        RmException(wxString reason)
             : myReason(reason) {}
         virtual ~RmException() {}
         virtual const char * what() const { return myReason.c_str(); }
@@ -37,7 +37,7 @@ namespace rootmap
     {
     public:
         RmException(const char* reason);
-        RmException(wxString& reason);
+        RmException(wxString reason);
         RmException(const RmException&);
         virtual ~RmException();
         virtual const char* what() const;
