@@ -3,6 +3,7 @@
 
 #include "core/common/DoubleCoordinates.h"
 #include "core/scoreboard/ScoreboardBox.h"
+#include <list>
 
 namespace rootmap
 {
@@ -299,7 +300,7 @@ namespace rootmap
         m_frameCount = count;
         // POV-ray uses a weird clock interval - begins at 0.0 for the first frame and goes
         // to 1.0 on the last frame. E.g. a 3-frame sequence will have clock values of 0.0, 0.5 and 1.0,
-        // not the 0.333, 0.666, 0.999 you might expect.        
+        // not the 0.333, 0.666, 0.999 you might expect.
         m_clockInterval = 1.0 / (static_cast<double>(m_frameCount) - 1);
     }
 
